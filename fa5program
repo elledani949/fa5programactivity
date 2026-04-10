@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyOAq7JNHphn+i7l5JySoVVP",
+      "authorship_tag": "ABX9TyNyqoLr0QNx9ja6dYNOQQxF",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -28,21 +28,44 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 3,
       "metadata": {
-        "id": "iUjVvsRvSq0g"
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "iUjVvsRvSq0g",
+        "outputId": "2737033f-3b8b-4e6c-d4c7-bc7e4833e282"
       },
-      "outputs": [],
-      "source": []
-    },
-    {
-      "cell_type": "code",
-      "source": [],
-      "metadata": {
-        "id": "l81KFqoxStZZ"
-      },
-      "execution_count": null,
-      "outputs": []
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The total price is:  140.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "# FA 5: Function - Personal Calculator\n",
+        "\n",
+        "from google.colab import output\n",
+        "\n",
+        "# Add price of items purchased\n",
+        "def calculate_total(price, quantity):\n",
+        "  return price * quantity\n",
+        "\n",
+        "# Get user input\n",
+        "item_price = float(input(\"Enter the price of the item: \"))\n",
+        "output.clear()\n",
+        "item_quantity = int(input(\"Enter the quantity of the item: \"))\n",
+        "output.clear()\n",
+        "\n",
+        "# Function call\n",
+        "result = calculate_total(item_price, item_quantity)\n",
+        "\n",
+        "# Display result\n",
+        "print(\"The total price is: \", result)"
+      ]
     }
   ]
 }
